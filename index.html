@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/ayar.css">
+
+
+  </head>
+
+  <body class="body">
+    <div class="container-fluid">
+    <div class="row">
+
+  <div class="col-md-4 col-ls-4 col-sm-2 col-xs-12"></div>
+  <div class="col-md-4 col-ls-4 col-sm-8 col-xs-12">
+
+<!--    <div class="logo-box-container">
+
+        <div class="logo-box">
+          <img src="img/logo3.png" style="width: 100px;height:100px;" alt="">
+        </div>
+    </div> -->
+
+      <form class="form-class">
+        <div class="row logorow">
+          <img src="img/okullogosu.png" alt="" class="img-responsive img-circle center-block" style="border-radius:50%; width:128px;height:128px;">
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon input-icons" id="basic-addon1"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+            <input type="email" class="form-control" placeholder="kullanıcı adı" id="exampleInputEmail1" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="form-group">
+
+        <div class="input-group">
+          <span class="input-group-addon input-icons" id="basic-addon1"><i class="fa fa-key" aria-hidden="true"></i></span>
+          <input type="password" class="form-control" placeholder="parola" id="exampleInputPassword1" aria-describedby="basic-addon1">
+        </div>
+
+
+</div>
+
+    <button type="submit" class="btn btn-block buton">Giriş Yap</button>
+    <div class="unuttum">
+      <a class="unuttum" href="#">parolamı unuttum</a>
+
+    </div>
+
+  </form>
+
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+    <div id="particles-js"></div>
+
+    <!-- DESIGN FROM Behnam Sobhkhiz https://www.uplabs.com/posts/login-page-f7c061aa-e7bd-42ed-ba42-1e5775aadb9d -->
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/ayar.js"></script>
+    <script>
+    $( document ).ready(function() {
+    var renkler = ["linear-gradient( 135deg, #ff7777 10%, #660000 100%)","linear-gradient( 135deg, #47c672 10%, #004717 100%)","linear-gradient( 135deg, #b268d8 10%, #34004f 100%)","linear-gradient( 135deg, #d6b95c 10%, #563f00 100%)","linear-gradient( 135deg, #727fe5 10%, #000951 100%)"];
+    var butonrenkler = ["#a50909","#098231","#690f99","#896a10","#2d388e"];
+    var butonrenkler2 = ["#ff9696","#6de094","#d494f7","#e0c26b","#96a1ff"];
+    var renkler2 = ["linear-gradient(#ff7777, #660000)","linear-gradient(#47c672, #004717)","linear-gradient(#b268d8, #34004f)","linear-gradient( #d6b95c, #563f00)","linear-gradient(#727fe5, #000951)"];
+    var renk =Math.floor(Math.random() * 5) ;
+  //  alert(renkler[renk]);
+    $('.body').css("background-image",renkler[renk]);
+    $('.buton').css("background",butonrenkler[renk]);
+      $('.buton').css("border-color",butonrenkler[renk]);
+
+      $('#exampleInputPassword1:focus').css("border-color",butonrenkler[renk]);
+        $('#exampleInputEmail1:focus').css("border-color",butonrenkler[renk]);
+      $('.form-control:focus').css("border-bottom",butonrenkler[renk]);
+      $('.input-group').css("border-color",butonrenkler[renk]);
+  $('.input-icons').css("color",butonrenkler[renk]);
+  $('.logo-box').css("background",butonrenkler[renk]);
+  $('.logo-box').css("background",renkler2[renk]);
+  $('.unuttum').css("color","#999");
+
+    $(".buton").hover(function(){
+      $(this).css("background",butonrenkler2[renk]);
+      $(this).css("color",butonrenkler[renk]);
+      }, function(){
+      $(this).css("background", butonrenkler[renk]);
+      $(this).css("color","#fff");
+    });
+
+
+      $(".unuttum").hover(function(){
+
+        $(this).css("color",butonrenkler[renk]);
+        }, function(){
+
+        $(this).css("color","#999");
+      });
+
+
+      });
+    </script>
+  </body>
+</html>
